@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./imgs/book-xxl.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Online Books. The World Most Famous Website</title>
+    <link rel="stylesheet" href="bookstore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="messagediv">
+    <div class="chat">
+      <i class="fa-solid fa-arrow-right"></i>
+      <p>Chat</p>
+      <input class="chatsearch" placeholder="search..." type="text">
+      <p>Recent</p>
+      <div class="chatdiv"></div>
+
+    </div>
+  </div>
+  <div class="setting">
+    <i class="fa-solid fa-gear"></i>
+  </div>
+  <div class="LogInpage">
+    <div class="circlecross2">
+      <i  class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="signupp">
+      <h1>Log In</h1>
+      <!-- <form id="form"> -->
+        <!-- <div class="form-groupp">
+          <label for="emaill">Email Address</label>
+          <input type="emaill" id="emaill" name="emaill" 
+                 placeholder="email@address.comm" required>
+        </div> -->
+        <!-- <div class="form-group">
+          <label for="website">Website URL</label>
+          <input type="url" id="website" name="website" 
+                 placeholder="http://jacinto.design" required>
+        </div> -->
+        <!-- <div id="password1" class="form-group">
+          <label  for="password2">Password</label>
+          <input type="password" id="password1" placeholder="Enter Your Password" 
+                 required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                 title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+        </div>
+        <button type="submitbtn">Log In</button>
+      </form> -->
+    </div>
+  </div>
+  </div>
+  <div class="SignUppage">
+    <div class="circlecross">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="signupp">
+      <h1>Sign Up Here</h1>
+      <!-- Form -->
+      <form id="form">
+        <!-- Full Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" 
+                 placeholder="Full Name" required minlength="3" maxlength="100">
+        </div>
+        <!-- Phone Number -->
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" 
+                 placeholder="03090023269" required pattern="[0]{1}[3]{1}[0-9]{9}">
+        </div>
+        <!-- Email Address -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" 
+                 placeholder="email@address.com" required>
+        </div>
+        <!-- Website URL -->
+        <!-- <div class="form-group">
+          <label for="website">Website URL</label>
+          <input type="url" id="website" name="website" 
+                 placeholder="http://jacinto.design" required>
+        </div> -->
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password1">Password</label>
+          <input type="password" id="password1" placeholder="Create Password (Min. 8 characters)" 
+                 
+                 title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+        </div>
+        <!-- Confirm Password -->
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" placeholder="Confirm Password"
+                  name="password">
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <!-- Error/Success Message -->
+      <div class="message-container">
+        <h3 id="message">All this data is required for SignUp</h3>
+      </div>
+    </div>
+  </div>
+    <div class="banner">
+        “Chase the vision, not the money; the money will end up following you.”
+    </div>
+    <div class="topNavBar">
+        <div class="logo">
+            <img src="./imgs/book-xxl.png" alt="">
+            <p>Online<span>Books</span></p>
+        </div>
+        <div class="aftersignup">
+          <input class="search" type="text" placeholder="Search for books here....">
+          <button class="searchbtn">Search</button>
+          <i class="fa-solid fa-message">
+            <div class="reddot"></div>
+          </i>
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+          <div class="profile">
+            <div class="dp">
+              <img src="./imgs/Saqlain.jpg" alt="">
+            </div>
+            <p><span class="name">Nasir Zia</span><br> <span>Developer</span></p>
+           
+          </div>
+        </div>
+        <div class="LoginSignup">
+          
+            <ul>
+                <li><a id="loginbtn" href="">Log In</a></li>
+                <li><a id="signupbtn" href="">SignUp</a></li>
+                <li><a  class="a" href="">Add to cart <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="line1 line11"></div>
+            <div class="line1 line12"></div>
+            <div class="line2 line13"></div>
+            <div class="line2 line14"></div>
+        </div>
+        <div class="box box2">
+            <div class="line1 anim2 line11"></div>
+            <div class="line1 anim2 line12"></div>
+            <div class="line2 anim2 line13"></div>
+            <div class="line2 anim2 line14"></div>
+        </div>
+        <div class="box box3">
+            <div class="line1 anim3 line11"></div>
+            <div class="line1 anim3 line12"></div>
+            <div class="line2 anim3 line13"></div>
+            <div class="line2 anim3 line14"></div>
+        </div>
+        <div class="box box4">
+            <div class="line1 anim4 line11"></div>
+            <div class="line1 anim4 line12"></div>
+            <div class="line2 anim4 line13"></div>
+            <div class="line2 anim4 line14"></div>
+        </div>
+        <div class="right-content">
+            <div class="content">
+                <!-- <p>"Moth Smoke is a short but interesting novel that focuses on the imprisonment of Daru and the events that lead to the downfall of his life."</p> -->
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                      <div class="front">
+                        <img src="./imgs/Book10.jpg" alt="">
+            
+                      </div>
+                      <div class="back">
+                        <img src="./imgs/Book7.jpg" alt="">
+                        
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                      <div class="front">
+                        <img src="./imgs/Book3.jpg" alt="">
+                      
+                      </div>
+                      <div class="back">
+                        <img src="./imgs/Book13.jpg" alt="">
+                        
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                      <div class="front">
+                      <img src="./imgs/Book4.jpg" alt="">
+                      </div>
+                      <div class="back">
+                        
+                        <img src="./imgs/Book8.jpg" alt="">
+                        
+                       
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                      <div class="front">
+                        <img src="./imgs/Book5.jpg" alt="">
+                      
+                      </div>
+                      <div class="back">
+                        
+                        <img src="./imgs/Book9.jpg" alt="">
+                    
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="books">
+                <button class="btn1">Buy a Book</button>
+                <button class="btn2">Earn Money</button>
+            </div>
+        </div>
+    </div>
+    <div class="dasboard">
+        <div class="sidebar">
+          <p class="p margin">ALL BOOKS</p>
+          <ul>
+            <li><a href="#featured"> <span><i class="fa-brands fa-angellist"></i></span> Featured Collection</a></li>
+            <li><a href="#bookofmonth"> <span><i class="fa-brands fa-accusoft"></i></span> Book of the Month</a></li>
+            <li><a href="#education"> <span><i class="fa-solid fa-building-columns"></i></span> Education</a></li>
+            <li><a href="#health"> <span><i class="fa-solid fa-bed-pulse"></i></span> Health</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-person-running"></i></span> Fitness</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-person-skiing"></i></span> Sports</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-clock-rotate-left"></i></span> History</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-horse"></i></span> Literature</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-user-nurse"></i></span> Medical</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-atom"></i></span> Science</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-photo-film"></i></span> Socialogy</a></li>
+          </ul>
+        </div>
+        <div id="health" class="bookstore">
+          <div  class="ADD">
+            <h1>Health</h1>
+            <div class="addto">
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book1.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Why We Sleep</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book2.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">In Defense of Food</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 100</span> &nbsp;&nbsp;50.00</p>
+                  <div id="education" class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book3.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Why We Get Fat</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 350</span> &nbsp;&nbsp;195.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book4.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Wheat Belly</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 300</span> &nbsp;&nbsp;100.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i  class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ADD top">
+            <h1>Education</h1>
+            <div class="addto">
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book4.jpg" alt="">
+                </div>
+                <div  class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Pedagogy of the Oppressed</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i  class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book5.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Educated</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book6.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Savage Inequalities</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div id="bookofmonth" class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book7.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">Dumbing Us Down</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div  class="ADD top">
+            <h1>Books of the Month</h1>
+            <div class="addto">
+              <div  class="addtocart">
+                <div   class="imgdiv">
+                  <img id="featured" src="./imgs/Book8.jpg" alt="">
+                </div>
+                <div  class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book9.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book10.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div  class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book11.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ADD top">
+            <h1>Features Collection</h1>
+            <div class="addto">
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book12.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book13.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book1.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="addtocart">
+                <div class="imgdiv">
+                  <img src="./imgs/Book3.jpg" alt="">
+                </div>
+                <div class="addtocartContent">
+                  <p class="mention">Not Mention</p>
+                  <p class="bookname mrg">The Alchemist Novel</p>
+                  <p class="name mrg">No Name</p>
+                  <p class="price mrg"><span>PKR 400</span> &nbsp;&nbsp;295.00</p>
+                  <div class="cart">
+                    <p>Add to Cart</p><span><i class="fa-solid fa-arrow-right-arrow-left"></i><i class="fa-solid fa-heart"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section class="contact-area" id="contact">
+      <div>
+          <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                  <div class="contact-content text-center">
+                    <div class="logo logo2">
+                      <img class="logoimg2" src="./imgs/book-xxl.png" alt="">
+                      <p class="color">Online<span >Books</span></p>
+                  </div>
+                      <a href="#"></a>
+                      <p>Buy Products from Prequalified Suppliers at Factory Price. Get Live Quotes Now! Logistics Service</p>
+                      <div class="hr"></div>
+                      <h6>Lahore Gulberg III It Tower P1 Floor office P131, Near Hafeez Center, Near Habib Bank</h6>
+                      <h6>+01 2345 6789 12<span>|</span>+01 2345 6789 12</h6>
+                      <div class="contact-social">
+                          <ul class="footerul">
+                              <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                              <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                              <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <p>Copyright &copy; 2019 All Rights Reserved.</p>
+  </footer>
+    <script src="bookstore.js"></script>
+</body>
+</html>
